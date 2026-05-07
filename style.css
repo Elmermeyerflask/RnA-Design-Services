@@ -212,6 +212,13 @@ section .title::after{
     color: #BA8E23;
     background: none;
 }
+.home .home-video{
+    margin-top: 30px;
+}
+.home .home-video video{
+    border-radius: 6px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
 
 /* about section styling */
 .about{
@@ -626,7 +633,6 @@ footer span a:hover{
     text-decoration: underline;
 }
 
-
 /* responsive media query start */
 @media (max-width: 1104px) {
     .about .about-content .left img{
@@ -709,6 +715,17 @@ footer span a:hover{
     .max-width{
         padding: 0 23px;
     }
+    .home,
+    .about,
+    .bbaboutus,
+    .services,
+    .contact,
+    .social {
+        min-height: auto;
+        height: auto;
+        padding: 80px 0;
+        background-attachment: scroll;
+    }
     .home .home-content .text-2{
         font-size: 60px;
     }
@@ -717,9 +734,39 @@ footer span a:hover{
     }
     .home .home-content a{
         font-size: 20px;
+        padding: 10px 30px;
     }
-    .services .serv-content .card{
+    .about .about-content,
+    .skills .skills-content,
+    .contact .contact-content {
+        flex-wrap: wrap;
+    }
+    .about .about-content .left,
+    .about .about-content .right,
+    .skills .skills-content .column,
+    .contact .contact-content .column {
         width: 100%;
+    }
+    .about .about-content .left,
+    .about .about-content .right {
+        margin: 0 auto 30px;
+    }
+    .about .about-content .left img,
+    .about .about-content .right img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    .services .serv-content .card {
+        width: 100%;
+        padding: 30px 20px;
+    }
+    .teams .carousel .card {
+        width: 100%;
+        padding: 20px;
+    }
+    .teams .carousel .card .box {
+        align-items: center;
     }
 }
 
@@ -729,6 +776,10 @@ footer span a:hover{
     }
     .home .home-content .text-3{
         font-size: 27px;
+    }
+    .home .home-content a{
+        font-size: 18px;
+        padding: 10px 25px;
     }
     .about .about-content .right .text,
     .skills .skills-content .left .text{
@@ -753,3 +804,4 @@ footer span a:hover{
         line-height: 38px;
     }
 }
+
